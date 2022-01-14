@@ -17,6 +17,21 @@ body {
   --noir: #000000;
 }
 
+.slogan {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  /* background-color: yellow; */
+}
+
+/* .logo {
+  position: fixed;
+  width: 50px;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+} */
+
 .nav,
 .slider {
   display: flex;
@@ -141,11 +156,11 @@ a {
 
   .nav h2,
   .slider h2 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .nav-tab {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }
 
@@ -283,7 +298,7 @@ img {
 .section__header {
   text-align: center;
   color: var(--rose);
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: 700;
   padding-bottom: 1em;
 }
@@ -313,7 +328,7 @@ img {
 }
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
-  background-color: var(--rose);
+  background-color: var(--vert);
   width: 50px;
   height: 10px;
   border-radius: 5px;
@@ -366,7 +381,7 @@ header.shrink .header {
   transition: height 0.5s ease;
 }
 .header__logo {
-  font-size: 2rem;
+  font-size: 20rem;
   font-weight: 700;
   position: absolute;
   width: 100%;
@@ -382,7 +397,7 @@ header.shrink .header {
 }
 .header__toggle,
 .header__nav {
-  font-size: 2rem;
+  font-size: 20rem;
 }
 .header__toggle {
   cursor: pointer;
@@ -433,7 +448,7 @@ em {
 
 .hero-section__brand {
   top: 20px;
-  font-size: 3rem;
+  font-size: 30rem;
   font-weight: 700;
   text-align: center;
   color: #3a3a3a;
@@ -927,4 +942,76 @@ footer .footer-menu__content li ~ li {
   100% {
     background-position: 0 0;
   }
+}
+
+/*test team*/
+
+.team {
+  padding: 4rem 0;
+  /* height: 100vh; */
+  position: relative;
+  z-index: 10000;
+}
+
+.team img {
+  transition: transform 0.7s ease-in-out;
+}
+
+.team img:hover {
+  transform: rotate(360deg);
+}
+
+.team h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color2);
+}
+
+.team .team__flex {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+}
+
+.team .member img {
+  float: left;
+  width: 100%;
+  height: 29vh;
+  object-fit: contain;
+}
+
+.team .member h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color2);
+}
+
+/*test image chelou*/
+
+.container2 {
+  width: 30%;
+  min-height: 60vh;
+  /* background-color: red; */
+}
+.image {
+  perspective: 3000px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  /* top: auto; */
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+.image img {
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+}
+.image:hover img {
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }

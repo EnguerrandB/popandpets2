@@ -93,7 +93,7 @@ class NavigationPage {
     } else {
       $(".header").removeClass("header--move-up");
       $(".nav-container").removeClass("nav-container--top-first");
-      // $(".nav-container").removeClass("nav-container--top-second");
+      $(".nav-container").removeClass("nav-container--top-second");
     }
   }
 
