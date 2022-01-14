@@ -994,6 +994,7 @@ footer .footer-menu__content li ~ li {
   width: 30%;
   min-height: 60vh;
   /* background-color: red; */
+  z-index: 0;
 }
 .image {
   perspective: 3000px;
@@ -1004,6 +1005,7 @@ footer .footer-menu__content li ~ li {
   /* top: auto; */
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
+  z-index: 0;
 }
 .image img {
   transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
